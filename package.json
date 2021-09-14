@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently \"npx nodemon server.js\" \"cd client  && npm start\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^6.2.1",
     "express": "^4.17.1",
     "mongoose": "^6.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
   }
 }
